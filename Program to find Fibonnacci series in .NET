@@ -1,1 +1,12 @@
+        Dim input = InputBox(“Enter The Terms”)
+        Dim a As Integer = 0
+        Dim b As Integer = 1
+        Dim c As Integer
+        Dim i As Integer
 
+        For i = 0 To input - 2
+            c = a + b
+            a = b
+            b = c
+            ListBox1.Items.Add(c)
+        Next
